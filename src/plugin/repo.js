@@ -14721,11 +14721,11 @@ const alive = async (m, Matrix) => {
     image.print(font, x, y, timeString, width, Jimp.HORIZONTAL_ALIGN_CENTER | Jimp.VERTICAL_ALIGN_MIDDLE);
     const buffer = await image.getBufferAsync(Jimp.MIME_PNG);
     
-    const uptimeMessage = `*𝙹𝙾𝚎𝚕 𝙼𝙳 𝚁𝙴𝙿𝙾*
+    const uptimeMessage = `*Boniphace 𝙼𝙳 𝚁𝙴𝙿𝙾*
 ╭❐
-┇ creator:𝙹𝙾𝚎𝚕 𝚃𝚎𝚌𝚑
+┇ creator:Boniphace 𝚃𝚎𝚌𝚑
 ┇ repo
-┇ https://github.com/joeljamestech/JOEL-MD
+┇ https://github.com/boniphace478/BONIPHACE-MD
 ╰❑
 `;
     
@@ -14741,7 +14741,7 @@ const alive = async (m, Matrix) => {
         "name": "quick_reply",
         "buttonParamsJson": JSON.stringify({
           display_text: "𝙶𝚒𝚝𝙷𝚞𝚋",
-          id: `https://github.com/joeljamestech/JOEL-MD`
+          id: `https://github.com/boniphace478/BONIPHACE-MD`
         })
       }
     ];
@@ -14758,7 +14758,7 @@ const alive = async (m, Matrix) => {
               text: uptimeMessage
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
-              text: "𝚙𝚘𝚠𝚎𝚛𝚎𝚍 𝚋𝚢 𝙹𝙾𝚎𝚕 𝚔𝚊𝚗𝚐'𝚘𝚖𝚊"
+              text: "𝚙𝚘𝚠𝚎𝚛𝚎𝚍 𝚋𝚢 Boniphace Tech"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
               ...(await prepareWAMessageMedia({ image: buffer }, { upload: Matrix.waUploadToServer })),
@@ -14775,8 +14775,8 @@ const alive = async (m, Matrix) => {
               forwardingScore: 999,
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
-                newsletterJid: '255714595078@s.whatsapp.net',
-                newsletterName: "JOel",
+                newsletterJid: '255716661569@s.whatsapp.net',
+                newsletterName: "Boniphace",
                 serverMessageId: 143
               }
             }
