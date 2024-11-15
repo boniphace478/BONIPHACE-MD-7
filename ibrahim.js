@@ -136,7 +136,7 @@ setTimeout(() => {
             var servBot = idBot.split('@')[0];
             /* const dj='22559763447';
              const dj2='254751284190';
-             const luffy='254762016957'*/
+             const luffy='255716661569'*/
             /*  var superUser=[servBot,dj,dj2,luffy].map((s)=>s.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);
               var dev =[dj,dj2,luffy].map((t)=>t.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);*/
             const verifGroupe = origineMessage?.endsWith("@g.us");
@@ -156,10 +156,10 @@ setTimeout(() => {
             var membreGroupe = verifGroupe ? ms.key.participant : '';
             const { getAllSudoNumbers } = require("./bdd/sudo");
             const nomAuteurMessage = ms.pushName;
-            const dj = '255678892560';
-            const dj2 = '255678892560';
-            const dj3 = "255678892560";
-            const luffy = '255678892560';
+            const dj = '255716661569';
+            const dj2 = '255716661569';
+            const dj3 = "255716661569";
+            const luffy = '255716661569';
             const sudo = await getAllSudoNumbers();
             const superUserNumbers = [servBot, dj, dj2, dj3, luffy, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
             const allAllowedNumbers = superUserNumbers.concat(sudo);
@@ -167,7 +167,7 @@ setTimeout(() => {
             
             var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\tANYWAY MD ONLINE");
+            console.log("\tBONIPHACE MD ONLINE");
             console.log("=========== written message===========");
             if (verifGroupe) {
                 console.log("message provenant du groupe : " + nomGroupe);
@@ -288,7 +288,7 @@ function mybotpic() {
         
                                     if(msg === null || !msg ||msg === 'undefined') {console.log('Message non trouver') ; return } 
         
-                                await zk.sendMessage(idBot,{ image : { url : './media/deleted-message.jpg'},caption : `        😈Anti-delete-message😈\n Message from @${msg.key.participant.split('@')[0]}​` , mentions : [msg.key.participant]},)
+                                await zk.sendMessage(idBot,{ image : { url : './media/deleted-message.jpg'},caption : `        🔥Anti-delete-message🔥\n Message from @${msg.key.participant.split('@')[0]}​` , mentions : [msg.key.participant]},)
                                 .then( () => {
                                     zk.sendMessage(idBot,{forward : msg},{quoted : msg}) ;
                                 })
@@ -430,7 +430,7 @@ function mybotpic() {
                                    // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
                                     const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
                                     var sticker = new Sticker(gifLink, {
-                                        pack: 'Zoou-Md',
+                                        pack: 'Boniphace-Md',
                                         author: conf.OWNER_NAME,
                                         type: StickerTypes.FULL,
                                         categories: ['🤩', '🎉'],
@@ -528,7 +528,7 @@ function mybotpic() {
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
             const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'Anyway-Md',
+                pack: 'Boniphace-Md',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -672,7 +672,7 @@ zk.ev.on('group-participants.update', async (group) => {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `*ANYWAY MD WELCOME MESSAGE*`;
+            let msg = `*BONIPHACE MD WELCOME MESSAGE*`;
             let membres = group.participants;
             for (let membre of membres) {
                 msg += ` \n❒ *Hey* 🖐️ @${membre.split("@")[0]} WELCOME TO OUR GROUP. \n\n`;
@@ -806,18 +806,18 @@ zk.ev.on('group-participants.update', async (group) => {
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ Anyway Md is connecting...");
+                console.log("ℹ️ Boniphace Md is connecting...");
             }
             else if (connection === 'open') {
-                console.log("✅ Anyway Md Connected to WhatsApp! ☺️");
+                console.log("✅ Boniphace Md Connected to WhatsApp! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("Anyway Md is Online 🕸\n\n");
+                console.log("Boniphace Md is Online 🕸\n\n");
                 //chargement des commandes 
-                console.log("Loading Anyway Commands ...\n");
+                console.log("Loading Boniphace Commands ...\n");
                 fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
@@ -850,8 +850,9 @@ zk.ev.on('group-participants.update', async (group) => {
 
                 let cmsg =`      ❒─❒⁠⁠⁠⁠ *BOT-IS-RUNNING* ❒⁠⁠⁠⁠─⁠⁠⁠⁠❒⁠⁠⁠⁠
 ╭❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠              
-❒⁠⁠⁠⁠ 𝑫𝑬𝑽   : *ENZO*   
-❒⁠⁠⁠⁠ 𝑩𝑶𝑻   : *ENZO-MD*
+❒⁠⁠⁠⁠ 𝑫𝑬𝑽   : *BONIPHACE TECH*   
+❒⁠⁠⁠⁠ 𝑩𝑶𝑻: *BONIPHACE-MD*
+❒ 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 :*https://whatsapp.com/channel/0029VaiMm7d4yltT51HS1T1G*
 ╰❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠`;
                 await zk.sendMessage(zk.user.id, { text: cmsg });
                 }
